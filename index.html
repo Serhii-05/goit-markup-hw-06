@@ -381,6 +381,18 @@
                 </li>
             </ul>
         </div>
+        <form class="foot-form" name="footer-form" autocomplete="on" novalidate>
+            <p>Подпишитесь на рассылку</p>
+            <div class="foot-form-container">
+                <input type="email" name="email" placeholder=" E-mail" />
+              
+                <button class="foot-form-button" type="submit">Подписаться
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-telegram"></use>
+                    </svg>
+                </button>
+            </div>  
+           </form>
         </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
@@ -391,8 +403,42 @@
                         <use href="./images/icons.svg#icon-close-modal"></use>
                     </svg>
                 </button>
+
+
+                <form class="modal-form">
+                    <h5>Оставьте свои данные, мы вам перезвоним</h5>
+
+            <div class="form-field">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+            </div>
+            
+            <div class="form-field">
+                <label>Телефон</label>
+                <input type="tel" name="tel">
+            </div>
+            
+            <div class="form-field">
+                <label>Почта</label>
+                <input type="email" name="email">
+            </div>
+            
+            <div class="form-field">
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment" cols="" rows="" placeholder="Введите текст"></textarea>
+            </div>
+            
+            
+            <div class="checkbox-container">
+                <input type="checkbox">
+                <label for="">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+            </div>
+
+                    <button class="modal-button-form" type="submit">Отправить</button>
+                </form>
             </div>
         </div>
+       
         <script src="./js/modal.js"></script>
     </body>
 </html>
